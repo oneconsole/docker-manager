@@ -1,2 +1,2 @@
 # docker-manager
-Docker Manager Library in Python.
+Docker Manager Library in Python

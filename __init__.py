@@ -15,9 +15,9 @@ class DockerManager(BasicOperations, ImageOperations, ContainerOperations):
     By instantiating a DockerManager object, you can able to communicate with Docker deamon::
  
     >>>from docker_manager import DockerManager
-    >>>docker = DockerManager(host='docker.marlabs.com:2376',\
+    >>>docker_manager = DockerManager(host='docker.marlabs.com:2376',\
         tls_verify=True,cert='/cert/cert.pem',key='/cert/key.pem',ca='/cert/ca.pem')
-    >>>docker.ping()
+    >>>docker_manager.ping()
     
     """
 

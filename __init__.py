@@ -12,12 +12,13 @@ class DockerManager(BasicOperations, ImageOperations, ContainerOperations):
     :param pem key: Certificate file key(Default is None).
     :param pem ca: Certificate file to verify(Default is None).
 
-    By instantiating a DockerManager object, you can able to communicate with Docker deamon::
+    By instantiating a DockerManager object, you can able to communicate with Docker deamon.
  
-    >>>from docker_manager import DockerManager
-    >>>docker_manager = DockerManager(host='docker.marlabs.com:2376',\
-        tls_verify=True,cert='/cert/cert.pem',key='/cert/key.pem',ca='/cert/ca.pem')
-    >>>docker_manager.ping()
+    .. code-block:: python
+
+        from docker_manager import DockerManager
+        docker = DockerManager(host='docker.marlabs.com:2376', tls_verify=True,cert='/cert/cert.pem', key='/cert/key.pem',ca='/cert/ca.pem')
+        docker.ping()
     
     """
 

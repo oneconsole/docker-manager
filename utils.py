@@ -1,3 +1,4 @@
+import struct
 
 class BaseEnum(object):
     def as_dict(self):
